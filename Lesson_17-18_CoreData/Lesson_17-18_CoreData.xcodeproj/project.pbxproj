@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3210B2861F8E31C400A1B273 /* Car+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210B27F1F8E31C400A1B273 /* Car+CoreDataClass.m */; };
+		3210B2871F8E31C400A1B273 /* Car+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210B2811F8E31C400A1B273 /* Car+CoreDataProperties.m */; };
+		3210B2881F8E31C400A1B273 /* Owner+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210B2831F8E31C400A1B273 /* Owner+CoreDataClass.m */; };
+		3210B2891F8E31C400A1B273 /* Owner+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210B2851F8E31C400A1B273 /* Owner+CoreDataProperties.m */; };
 		32DB942A1F8D2A13007CAFD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB94291F8D2A13007CAFD5 /* AppDelegate.m */; };
 		32DB942D1F8D2A13007CAFD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB942C1F8D2A13007CAFD5 /* ViewController.m */; };
 		32DB94301F8D2A13007CAFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DB942E1F8D2A13007CAFD5 /* Main.storyboard */; };
@@ -14,9 +18,18 @@
 		32DB94351F8D2A13007CAFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DB94341F8D2A13007CAFD5 /* Assets.xcassets */; };
 		32DB94381F8D2A13007CAFD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DB94361F8D2A13007CAFD5 /* LaunchScreen.storyboard */; };
 		32DB943B1F8D2A13007CAFD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB943A1F8D2A13007CAFD5 /* main.m */; };
+		32DB945D1F8D40B6007CAFD5 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB945C1F8D40B6007CAFD5 /* NSString+Validation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3210B27E1F8E31C400A1B273 /* Car+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataClass.h"; sourceTree = "<group>"; };
+		3210B27F1F8E31C400A1B273 /* Car+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataClass.m"; sourceTree = "<group>"; };
+		3210B2801F8E31C400A1B273 /* Car+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3210B2811F8E31C400A1B273 /* Car+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3210B2821F8E31C400A1B273 /* Owner+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Owner+CoreDataClass.h"; sourceTree = "<group>"; };
+		3210B2831F8E31C400A1B273 /* Owner+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Owner+CoreDataClass.m"; sourceTree = "<group>"; };
+		3210B2841F8E31C400A1B273 /* Owner+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Owner+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3210B2851F8E31C400A1B273 /* Owner+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Owner+CoreDataProperties.m"; sourceTree = "<group>"; };
 		32DB94251F8D2A13007CAFD5 /* Lesson_17-18_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson_17-18_CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DB94281F8D2A13007CAFD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32DB94291F8D2A13007CAFD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +41,8 @@
 		32DB94371F8D2A13007CAFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32DB94391F8D2A13007CAFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32DB943A1F8D2A13007CAFD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32DB945B1F8D40B6007CAFD5 /* NSString+Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
+		32DB945C1F8D40B6007CAFD5 /* NSString+Validation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +84,35 @@
 				32DB94361F8D2A13007CAFD5 /* LaunchScreen.storyboard */,
 				32DB94391F8D2A13007CAFD5 /* Info.plist */,
 				32DB943A1F8D2A13007CAFD5 /* main.m */,
+				32DB945B1F8D40B6007CAFD5 /* NSString+Validation.h */,
+				32DB945C1F8D40B6007CAFD5 /* NSString+Validation.m */,
 				32DB94311F8D2A13007CAFD5 /* Lesson_17_18_CoreData.xcdatamodeld */,
+				32DB94411F8D340D007CAFD5 /* CoreData */,
 			);
 			path = "Lesson_17-18_CoreData";
+			sourceTree = "<group>";
+		};
+		32DB94411F8D340D007CAFD5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				32DB94421F8D340D007CAFD5 /* Entities */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		32DB94421F8D340D007CAFD5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3210B27E1F8E31C400A1B273 /* Car+CoreDataClass.h */,
+				3210B27F1F8E31C400A1B273 /* Car+CoreDataClass.m */,
+				3210B2801F8E31C400A1B273 /* Car+CoreDataProperties.h */,
+				3210B2811F8E31C400A1B273 /* Car+CoreDataProperties.m */,
+				3210B2821F8E31C400A1B273 /* Owner+CoreDataClass.h */,
+				3210B2831F8E31C400A1B273 /* Owner+CoreDataClass.m */,
+				3210B2841F8E31C400A1B273 /* Owner+CoreDataProperties.h */,
+				3210B2851F8E31C400A1B273 /* Owner+CoreDataProperties.m */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3210B2861F8E31C400A1B273 /* Car+CoreDataClass.m in Sources */,
 				32DB942D1F8D2A13007CAFD5 /* ViewController.m in Sources */,
+				32DB945D1F8D40B6007CAFD5 /* NSString+Validation.m in Sources */,
 				32DB942A1F8D2A13007CAFD5 /* AppDelegate.m in Sources */,
+				3210B2891F8E31C400A1B273 /* Owner+CoreDataProperties.m in Sources */,
 				32DB943B1F8D2A13007CAFD5 /* main.m in Sources */,
 				32DB94331F8D2A13007CAFD5 /* Lesson_17_18_CoreData.xcdatamodeld in Sources */,
+				3210B2871F8E31C400A1B273 /* Car+CoreDataProperties.m in Sources */,
+				3210B2881F8E31C400A1B273 /* Owner+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

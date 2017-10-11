@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Owner+CoreDataProperties.h"
+#import "Car+CoreDataProperties.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,53 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSArray *ownersArray = [self owners];
+    
+    if (ownersArray.count == 0) {
+        Owner *owner = [NSEntityDescription insertNewObjectForEntityForName:@"Owner"
+                                                     inManagedObjectContext:self.persistentContainer.viewContext];
+        
+        [owner setValue:@"John" forKey:@"name"];
+        [owner setValue:@(23) forKey:@"age"];
+        
+        NSMutableSet *carSet = [NSMutableSet set];
+        
+        for (NSUInteger i = 0; i < 5; i++) {
+            Car *car = [NSEntityDescription insertNewObjectForEntityForName:@"Car" inManagedObjectContext:self.persistentContainer.viewContext];
+            
+            [car setValue:[NSString stringWithFormat:@"Car %lu", i] forKey:@"name"];
+            [car setValue:@(80 + i*10) forKey:@"speed"];
+            
+            [carSet addObject:car];
+        }
+        
+        owner.cars = carSet;
+        
+    }
+    
+    ownersArray = [self owners];
+    
+    NSLog(@"");
     return YES;
+}
+
+- (NSArray *)owners {
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+    NSFetchRequest *request = [Owner fetchRequest];
+    
+    NSArray *array = [[context executeFetchRequest:request error:nil] mutableCopy];
+    
+    return array;
+}
+
+- (NSArray *)cars {
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+    NSFetchRequest *request = [Car fetchRequest];
+    
+    NSArray *array = [[context executeFetchRequest:request error:nil] mutableCopy];
+    
+    return array;
 }
 
 
