@@ -8,6 +8,13 @@
 
 #import "AppDelegate.h"
 
+@class Owner, Car;
+
 @interface AppDelegate (DataWorking)
+
+- (NSArray *)allCars;
+- (NSArray *)carsWithSpeed:(NSNumber *)speed forOwner:(Owner *)owner;
+- (NSArray *)carsSortedBySpeed;
+- (void)removeCarWithSpeed:(NSNumber *)speed;
 
 @end

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Owner+CoreDataProperties.h"
 #import "Car+CoreDataProperties.h"
+#import "AppDelegate+DataWorking.h"
 
 @interface AppDelegate ()
 
@@ -41,10 +42,16 @@
         }
         
         owner.cars = carSet;
-        
     }
     
     ownersArray = [self owners];
+    Owner *owner1 = ownersArray.firstObject;
+    
+    NSArray *allCars = [self allCars];
+    NSArray *carsWithSomeSpeed = [self carsWithSpeed:@80 forOwner:owner1];
+    NSArray *carsSortedBySpeed = [self carsSortedBySpeed];
+    [self removeCarWithSpeed:@100];
+    [self saveContext];
     
     NSLog(@"");
     return YES;
